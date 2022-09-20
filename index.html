@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spense</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@600;700&family=Montserrat:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <h2>spense.</h2>
+
+        <!-- drawer -->
+        <section>
+          <button id="hamburger-button" class="hamburger-button">
+            <svg
+              width="28"
+              height="24"
+              viewBox="0 0 24 20"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z"
+                fill="black"
+              />
+            </svg>
+          </button>
+        </section>
+
+        <!-- desktop nav -->
+        <div class="desktop-menu buttons">
+          <button class="btn">Business</button>
+          <button class="btn">Pricing</button>
+          <button class="btn">Features</button>
+        </div>
+        <div class="desktop-menu">
+          <button class="btn">Login</button>
+          <button class="btn">Get Started</button>
+        </div>
+      </nav>
+
+      <!-- mobile menu buttons -->
+      <section class="mobile-menu" id="mobile-menu">
+        <div>
+          <button>Business</button>
+          <button>Pricing</button>
+          <button>Features</button>
+          <button>Login</button>
+          <button>Get Started</button>
+        </div>
+      </section>
+    </header>
+    <main>
+      <!-- Share thoughts section -->
+      <section class="herosection">
+        <div class="container">
+          <div class="desktop-view-sharethoughts">
+            <div>
+              <picture>
+                <source
+                  media="(min-width:1045px)"
+                  srcset="Assets/Hero_Image_(Desktop).png"
+                />
+                <source
+                  media="(min-width:601px)"
+                  srcset="Assets/Hero_Image_(Tablet).png"
+                />
+                <img
+                  src="Assets/Hero_Image_(Mobile).png"
+                  alt="Heroimage"
+                  class="heroimage"
+                />
+              </picture>
+            </div>
+            <div class="sharetext">
+              <h1>Share your unfiltered thoughts. Get paid.</h1>
+              <p class="description">
+                Spense is an open platform for individuals to share their
+                unfiltered thoughts. Discuss the topics you love, and get paid
+                for doing just that.
+              </p>
+              <div class="checkmarks-text">
+                <div class="checkmark-text">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <p>Receive 99% off the earnings.</p>
+                </div>
+                <div class="checkmark-text">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <p>Get paid via Debit Card, ACH, or PayPal.</p>
+                </div>
+                <div class="checkmark-text">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM10.75 17.292L6.25 12.928L8.107 11.07L10.75 13.576L16.393 7.792L18.25 9.649L10.75 17.292Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <p>Withdraw your earnings anytime.</p>
+                </div>
+              </div>
+              <div class="mailgetstarted">
+                <input
+                  type="text"
+                  placeholder="john@example.com"
+                  class="inputemail"
+                />
+                <button class="getstarted">Get Started</button>
+              </div>
+            </div>
+            <!-- websites logos -->
+          </div>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="logos">
+          <img
+            src="./Assets/Facebook Logo.png"
+            alt="Facebook"
+            class="facebook"
+          />
+          <img
+            src="./Assets/Dribbble Logo.png"
+            alt="Dribbble"
+            class="dribble"
+          />
+          <img src="./Assets/Youtube Logo.png" alt="Youtube" class="youtube" />
+          <img
+            src="./Assets/Pinterest Logo.png"
+            alt="Pinterest"
+            class="pinterest"
+          />
+          <img src="./Assets/Twitter Logo.png" alt="Twitter" class="twitter" />
+          <img src="./Assets/Reddit Logo.png" alt="Reddit" class="reddit" />
+          <img src="./Assets/Google Logo.png" alt="Google" class="google" />
+          <img src="./Assets//Slack Logo.png" alt="Slack" class="slack" />
+        </div>
+      </section>
+
+      <!-- Secure your money with Escrow -->
+      <section class="securesection container">
+        <div class="securedesc">
+          <h1>Secure your money with Escrow.</h1>
+          <p class="description">
+            Spense uses Escrow to secure all payments. We believe Escrow offers
+            the highest level of security for your payments, so you never need
+            to worry about scams.
+          </p>
+          <p class="learnmore">Learn more about Escrow →</p>
+        </div>
+        <picture class="phonemockup">
+          <source
+            media="(min-width:1045px)"
+            srcset="Assets/Phone_Mockup_(Desktop).png"
+          />
+          <source
+            media="(min-width:601px)"
+            srcset="Assets/Phone_Mockup_(Tablet).png"
+          />
+          <img
+            src="Assets/Phone_Mockup_(Mobile).png"
+            alt="Heroimage"
+            class="phonemockup"
+          />
+        </picture>
+      </section>
+
+      <!-- Text editor -->
+      <section class="texteditor_section container">
+        <div>
+          <h1>A text editor like no other.</h1>
+          <p class="description">
+            Our text editor pulls you into focus mode with it's simplistic
+            design and usability so you can put out your best writings.
+          </p>
+          <p class="learnmore">Text editor live Demo →</p>
+        </div>
+        <img
+          src="./Assets/Text Editor.png"
+          alt="Text_Editor"
+          class="texteditor_img"
+        />
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="spensefooter">
+          <p>spense.</p>
+          <p class="spensedesc">
+            Spense is an open platform for individuals to share their unfiltered
+            thoughts. Discuss the topics you love, and get paid for doing just
+            that
+          </p>
+        </div>
+
+        <div class="footerbuttons">
+          <div>
+            <p>Sitemap</p>
+            <button>Homepage</button>
+          </div>
+
+          <div>
+            <p>Resources</p>
+            <button>Support</button>
+            <button>Contact</button>
+            <button>FAQ</button>
+          </div>
+
+          <div>
+            <p>Company</p>
+            <button>About</button>
+            <button>Customers</button>
+            <button>Blog</button>
+          </div>
+
+          <div>
+            <p>Opportunities</p>
+            <button>Jobs</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
